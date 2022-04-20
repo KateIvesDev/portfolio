@@ -1,0 +1,372 @@
+/*------------
+CUSTOM FONT FACE
+--------------*/
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src:  url('/assets/webfonts/PlusJakartaSans-Bold.woff') format('woff') ;
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/assets/webfonts/PlusJakartaSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/assets/webfonts/PlusJakartaSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/assets/webfonts/PlusJakartaSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('/assets/webfonts/PlusJakartaSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+$font-family-sans-serif: 'PlusJakartaSans';
+
+/*------------
+HEADINGS
+--------------*/
+
+$headings-font-family:  $font-family-sans-serif;
+$headings-font-weight: bolder;
+$display-font-weight: 800;
+
+
+/*------------
+THEME COLORS & GRADIENTS
+--------------*/
+
+$purple: #b16cea;
+$crimson: #ff5e69;
+$orange: #ff8a56;
+$coral: #ffa84b;
+$grey: #f3f3f3;
+$royalBlue: #186FE1;
+$white: #fff;
+$black: #0d0e10;
+
+//Primary Color:
+$primary: $white;
+$secondary: $crimson;
+
+//Enable Gradient Options
+$enable-gradients: true;
+$enable-shadows: true;
+
+//Gradients
+$gradientTheme: linear-gradient(150deg, $purple 20%, $crimson 60%, $orange 80%, $coral);
+
+.background-gradient {
+  background-image: $gradientTheme;
+}
+
+.border-gradient-circle {
+  --b:10px;  /* border width*/
+  display: inline-block;
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  position: relative;
+  z-index: 0;
+  border-radius: 50%;
+  background-image: url('/assets/kwi.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border-gradient-circle:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset: 0;
+  background: $gradientTheme;
+  padding: var(--b);
+  border-radius: 50%;
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.text-gradient {
+  background-color: $orange;
+  background-image: $gradientTheme;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  -moz-text-fill-color: rgba(255, 255, 255, 0) ;
+}
+
+/*------------
+LINK STYLING
+--------------*/
+
+.hover-text-crimson a:hover {
+  color: $crimson ;
+}
+
+.crimson {
+  background: $gradientTheme;
+  opacity: 0.5;
+  padding: .2em;
+}
+
+.crimson:hover {
+  background: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+
+$link-hover-color: $crimson;
+$link-hover-decoration: underline;
+
+
+/*------------
+BUTTON STYLING
+--------------*/
+
+.btn-gradient {
+  color: $primary;
+  font-family: $font-family-sans-serif;
+  background-image: $gradientTheme;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: $crimson;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  width: 200px !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: none;
+}
+
+.btn-gradient:hover {
+  color: white;
+  text-decoration: none;
+  background-image: none;
+}
+
+.btn-clear-gradient {
+  display: inline-block;
+  width: 200px !important;
+  line-height: 1.4;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: $orange;
+  background-image: $gradientTheme;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0); 
+  -moz-text-fill-color: rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+  border: 1px solid $crimson;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.gradient-fix {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+} 
+
+.glow-on-hover {
+  line-height: 1.4;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid crimson;
+  outline: none;
+  color: $crimson;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 1rem;
+  width: 200px !important;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #b16cea, #ff5e69, #ff8a56, #ffa84b, #ff8a56, #ff5e69, #b16cea);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 1rem;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+}
+
+.glow-on-hover:hover {
+  text-decoration: none;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/*------------
+BORDER RADIUS 
+--------------*/
+.rounded-4 {
+  border-radius: 1.2rem;
+}
+
+/*------------
+SPACER VARIABLES
+--------------*/
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6,
+  8: $spacer * 7.5,
+  9: $spacer * 9,
+  10: $spacer * 10.5,
+);
+
+
+/*------------
+NAVBAR SECTION 
+--------------*/
+.navbar {
+  background: $black;
+  background-image: none;
+}
+
+/*------------
+ABOUT SECTION 
+--------------*/
+.about {
+  background: $grey;
+}
+
+
+/*------------
+PROJECT SECTION 
+--------------*/
+.card {
+ color: white;
+ padding: 1rem;
+}
+.card:hover {
+  background: black;
+  color: white;
+}
+$card-bg: #27282e;
+$card-border-radius: 1.4rem;
+
+
+/*------------
+SCROLLBAR STYLING
+--------------*/
+
+/* Style the scrollbar background */
+::-webkit-scrollbar {
+  background: $gradientTheme;;
+}
+
+/* Style the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: $black;
+}
+
+/*------------
+MAILCHIMP FORM
+--------------*/
+
+.mailchimp-form input {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.honey {
+  color: transparent;
+  background: transparent;
+}
+.honey input {
+  border: none;
+  font-size: 0.1em;
+}
+
+/*------------
+FOOTER ICONS
+--------------*/
+svg:hover { 
+  fill: url("#grad2"); 
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
