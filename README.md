@@ -3,7 +3,7 @@ This project contains my personal portfolio with some of my client work and othe
 
 **Link to project:** https://www.kateives.com
 
-![alt tag] (https://www.kateives.com/assets/Kate-Ives-Card.png)
+![alt tag](https://www.kateives.com/assets/Kate-Ives-Card.png)
 
 ## How It's Made:
 
