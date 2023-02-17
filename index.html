@@ -7,8 +7,8 @@
  
     <!-- Primary Meta Tags -->
     <title>Kate Ives - Software Engineer - Full Stack Web Developer</title>
-    <meta name="title" content="Kate Ives - Software Engineer - Full Stack Web Developer">
-    <meta name="description" content="Hi! I'm Kate, your next software engineer. Check out my portfolio to see my recent projects.">
+    <meta name="title" content="Kate Ives - Software Engineer - Full Stack Web Developer - Front End Web Developer Baton Rouge">
+    <meta name="description" content="Hi! I'm Kate, a front end web developer and software engineer based in Baton Rouge, Louisiana. Check out my portfolio to see my recent projects.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -29,6 +29,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!--Preload Font-->
+    <link rel="preload" as="font" href="/assets/webfonts/PlusJakartaSans-Bold.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/webfonts/PlusJakartaSans-Regular.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/webfonts/PlusJakartaSans-SemiBold.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/webfonts/PlusJakartaSans-ExtraBold.woff" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/webfonts/PlusJakartaSans-SemiBold.woff" type="font/woff2" crossorigin="anonymous">
     <!--Stylsheets-->
     <link href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/animate.css/animate.css">
@@ -81,11 +87,13 @@
       <div class="row pt-4 align-items-center">
           <div class="col-12 col-lg-6">
             <h1 class="mb-4 text-center display-1 pt-lg-6" data-aos="fade"
-            data-aos-offset="300"data-aos-easing="ease-in-sine">
+            data-aos-offset="300" data-aos-easing="ease-in-sine">
               <span class="text-gradient gradient-fix">KATE IVES
                 </span>
               </h1>
-            <h2 class="text-center">Software Engineer</h2>
+            <h2 class="text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"
+            data-aos-delay="300"
+            data-aos-offset="0">Software Engineer</h2>
             <p class="text-center fs-4 py-2" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine"
             data-aos-delay="300"
             data-aos-offset="0">
@@ -101,7 +109,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_2vd1q4id.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
+            <lottie-player src="/data.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
           </div>
       </div>
       <div class="text-center pt-2">
@@ -219,8 +227,77 @@
     data-aos-easing="ease-in-sine">
       <h6><span class="text-gradient">//PROJECTS</span></h6>
       <h2 class="text-white py-2 mx-auto pt-4 pb-6 display-4">Moving your business forward with technology, design and problem-solving.</h2>
-      
-      <div class="row text-start" data-aos="fade" data-aos-duration="5000"
+
+      <div class="row text-center" data-aos="fade" data-aos-duration="5000"
+      data-aos-easing="ease-in-sine">
+        <div class="col-md-12 col-lg-6">
+          <div class="card mx-2 my-4">
+            <div class="card-body">
+              <img src="/assets/quiz.gif" class="img-fluid project-image">
+              <h4 class="card-title mt-4">Quizzical React App</h4>
+              <h5>Website Design, Responsive Design</h5>
+              <h6 class="text-gradient">HTML5, CSS, ReactJS</h6>
+              <p class="card-text">A mobile-responsive quiz application using the Open Trivia API.</p>
+              <div class="row justify-content-center gap-2">
+                <a href="https://kateivesdev.github.io/quizzical/" target="_blank" class="btn-gradient">Live Preview</a>
+                <a href="https://github.com/KateIvesDev/quizzical" class="btn-clear-gradient gradient-fix">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6">
+          <div class="card mx-2 my-4">
+            <div class="card-body">
+              <img src="/assets/emilysayssit.gif" class="img-fluid project-image">
+              <h4 class="card-title mt-4">Pet Sitter Business Website</h4>
+              <h5>Website Design, Responsive Design</h5>
+              <h6 class="text-gradient">Wordpress</h6>
+              <p class="card-text">A mobile-responsive Wordpress site for a local small business.</p>
+              <div class="row justify-content-center gap-2">
+                <a href="https://www.emilysayssit.com" target="_blank" class="btn-gradient">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center" data-aos="fade" data-aos-duration="5000"
+      data-aos-easing="ease-in-sine">
+        <div class="col-md-12 col-lg-6">
+          <div class="card mx-2 my-4">
+            <div class="card-body">
+              <img src="/assets/devfest.gif" class="img-fluid project-image">
+              <h4 class="card-title mt-4">DevFest Baton Rouge - Event Website</h4>
+              <h5>Website Design, Responsive Design</h5>
+              <h6 class="text-gradient">HTML5, Tailwind CSS, ReactJS</h6>
+              <p class="card-text">A mobile-responsive website for a local tech conference, utilizing the Sessionize API.</p>
+              <div class="row justify-content-center gap-2">
+                <a href="https://www.devfestbr.com" target="_blank" class="btn-gradient">Live Preview</a>
+                <a href="https://github.com/KateIvesDev/DevFest-Template" class="btn-clear-gradient gradient-fix">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 ">
+          <div class="card m-2 my-4">
+            <div class="card-body">
+              <img src="/assets/space.gif" class="img-fluid project-image">
+              <h4 class="card-title mt-4">Space Tourism Website</h4>
+              <h5>Website Design, Responsive Design</h5>
+              <h6 class="text-gradient">HTML5, Tailwind, JavaScript, React</h6>
+              <p class="card-text">A space tourism website built with React.</p>
+              <div class="row justify-content-center gap-2 ">
+                <a href="https://cerulean-tarsier-4703cc.netlify.app/" class="btn-gradient">Live Preview</a>
+                <a href="https://github.com/KateIvesDev/Space-Tourism" class="btn-clear-gradient gradient-fix">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center" data-aos="fade" data-aos-duration="5000"
       data-aos-easing="ease-in-sine">
         <div class="col-md-12 col-lg-6">
           <div class="card mx-2 my-4">
@@ -229,13 +306,13 @@
               <h4 class="card-title mt-4">Pho Kitchen - Restaurant Website</h4>
               <h5>Website Design, Responsive Design</h5>
               <h6 class="text-gradient">HTML5, CSS3, Sass, JavaScript, Bootstrap</h6>
-              <p class="card-text">A mobile responsive and modern restaurant website.</p>
-              <div class="row justify-content-start gap-2">
+              <p class="card-text">A mobile-responsive restaurant website.</p>
+              <div class="row justify-content-center gap-2">
                 <a href="https://pho-kitchen.netlify.app/" target="_blank" class="btn-gradient">Live Preview</a>
-                <a href="#" class="btn-clear-gradient gradient-fix">View Code</a>
               </div>
             </div>
           </div>
+          
         </div>
         <div class="col-md-12 col-lg-6 ">
           <div class="card m-2 my-4">
@@ -244,51 +321,18 @@
               <h4 class="card-title mt-4">Hudson Salon - Hair Salon Website</h4>
               <h5>Website Design, Responsive Design</h5>
               <h6 class="text-gradient">HTML5, CSS3, Sass, JavaScript, Bootstrap</h6>
-              <p class="card-text">A mobile responsive and modern hair salon website.</p>
-              <div class="row justify-content-start gap-2 ">
+              <p class="card-text">A mobile-responsive hair salon website.</p>
+              <div class="row justify-content-center gap-2 ">
                 <a href="https://hudson-salon.netlify.app/" class="btn-gradient">Live Preview</a>
-                <a href="#" class="btn-clear-gradient">View Code</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- 
-      <div class="row text-start" data-aos="fade" data-aos-duration="5000"
-      data-aos-easing="ease-in-sine">
-        <div class="col-md-12 col-lg-6">
-          <div class="card m-2 my-4">
-            <div class="card-body">
-              <img src="/assets/placeholder.jpg" class="img-fluid project-image">
-              <h4 class="card-title mt-4">Restaurant Website</h4>
-              <h5>Website Design, Responsive Design</h5>
-              <h6 class="text-gradient">HTML5, CSS3, Sass, JavaScript, Bootstrap</h6>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <div class="row justify-content-start gap-2">
-                <a href="#" class="btn-gradient">Live Preview</a>
-                <a href="#" class="btn-clear-gradient">View Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-6 ">
-          <div class="card m-2 my-4">
-            <div class="card-body">
-              <img src="/assets/placeholder.jpg" class="img-fluid project-image">
-              <h4 class="card-title mt-4">Restaurant Website</h4>
-              <h5>Website Design, Responsive Design</h5>
-              <h6 class="text-gradient">HTML5, CSS3, Sass, JavaScript, Bootstrap</h6>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <div class="row justify-content-start gap-2">
-                <a href="#" class="btn-gradient">Live Preview</a>
-                <a href="#" class="btn-clear-gradient">View Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-       -->
+      
+    
+       
     </div>
+  </div>
   </section>
 <!--ABOUT-->
   <section class="container-fluid pt-8 pb-6 min-vh-100 about" id="about" data-aos="fade" data-aos-duration="5000"
@@ -471,11 +515,12 @@
           <!--End mc_embed_signup-->
         </div>
       </div>
-      <div class="row mx-auto text-center text-white" style="width: 90%">
+      <div class="row mx-auto justify-content-center text-center text-white" style="width: 90%">
         <!-- Copyright -->
-        <hr class="hr-sm me-3 mt-5" style="height: 1px;"> © 2022 Kate Ives. All Rights Reserved.
+        
+        <hr class="hr-sm me-3 mt-5" style="height: 1px;"> © 2023 Kate Ives. All Rights Reserved.</hr>
+        <p>Made with ❤️ in Baton Rouge, LA.</p>
       </div>
-      
     </div>
   </footer>
   

@@ -167,7 +167,7 @@ BUTTON STYLING
   padding: 1rem 2rem;
   font-size: 1.2rem;
   border-radius: 1rem;
-  width: 200px !important;
+  width: 150px !important;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: none;
 }
@@ -180,7 +180,7 @@ BUTTON STYLING
 
 .btn-clear-gradient {
   display: inline-block;
-  width: 200px !important;
+  width: 150px !important;
   line-height: 1.4;
   padding: 1rem 2rem;
   font-size: 1.2rem;
@@ -319,6 +319,7 @@ PROJECT SECTION
 .card {
  color: white;
  padding: 1rem;
+ min-height: 600px;
 }
 .card:hover {
   background: black;
